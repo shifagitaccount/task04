@@ -1,106 +1,42 @@
-
-
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Batchmates Table</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #b7bcce;
-        }
-        
-
-        table {
-            width: 60%;
-            border-spacing: 0; 
-           /*   border collaps use ke liye  */
-            margin: 20px auto;
-         border-radius: 15px;
-         border: 2px solid rgb(184, 24, 24);
-        }
-
-        th, td {
-            padding: 14px;
-            text-align: center;
-            border: 1px solid rgb(127, 138, 134);
-            color: rgb(15, 177, 189); 
-            border-radius: 48px;
-        }
-
-        th {
-            background-color: rgb(107, 81, 16);
-            color: white;
-        }
-        
-        
-
-        tr:nth-child(even):hover {
-            background-color: rgb(86, 7, 61);
-        }
-        tr:nth-child(odd):hover {
-            background-color: olive;
-        }
-        h2{
-            background-color: rgb(79, 170, 239);
-            color: gold;
-        }
-        h2:hover{
-            background-color: brown;
-        }
-        
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Background Image Example</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <center><h2>relative</h2></center>
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Hometown</th>
-                <th>Contact Number</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>aadil faizan</td>
-                <td>MUZAFFARPUR</td>
-                <td>952590458</td1>
-            </tr>
-            <tr>
-                <td>MD tamanna</td>
-                <td>muzaffarpur</td>
-                <td>827161498567</td>
-            </tr>
-            <tr>
-                <td>areeb</td>
-                <td>patna</td>
-                <td>9504046546</td>
-                </tr>
-                <td>rehana </td>
-                <td>motipur</td>
-                <td>5642369809</td>
-            </tr>
-            <tr>
-                <td>muskan</td>
-                <td>delhi</td>
-                <td>79869638097</td>
-            </tr>
-            <tr>
-                <td>anshu</td>
-                <td>aurangabad</td>
-                <td>92594589734</td>
-            </tr>
-            <tr>
-                <td>saad</td>
-                <td>kati</td>
-                <td>25715545663</td>
-                
-            </tr>
-        </tbody>
-    </table>
+  <div class="content">
+    <h1>Welcome to My Site</h1>
+    <p>This is a simple website with a background image.</p>
+  </div>
 </body>
 </html>
+/* Set background image for entire body */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  
+  /* Center the content */
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  
